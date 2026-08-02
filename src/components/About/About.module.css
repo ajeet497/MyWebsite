@@ -1,0 +1,303 @@
+.aboutSection {
+    min-height: 100vh;
+    background-color: #0B1020;
+    padding: 100px 10%;
+}
+
+.aboutContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ================= SECTION TITLE ================= */
+
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sectionTitle h4 {
+    color: #8B5CF6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.sectionTitle h2 {
+    color: white;
+    font-size: 42px;
+    margin-top: 10px;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.aboutContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+/* ================= IMAGE ================= */
+
+.imageWrapper {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 25px;
+    box-shadow: 0 0 40px rgba(139, 92, 246, 0.6);
+}
+
+.aboutImage {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 7 / 8;
+
+    overflow: hidden;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.aboutImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ================= TEXT ================= */
+
+.aboutText {
+    flex: 1;
+}
+
+.aboutText h3 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.aboutText p {
+    color: #B8C0D4;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 30px;
+}
+
+/* ================= CARDS ================= */
+
+.aboutCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    flex: 1;
+    min-width: 170px;
+
+    background: #131B33;
+
+    border: 1px solid #26355A;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    text-align: center;
+
+    transition: all .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: #8B5CF6;
+
+    box-shadow: 0 10px 25px rgba(139, 92, 246, .3);
+}
+
+.cardIcon {
+    font-size: 28px;
+    color: #8B5CF6;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #B8C0D4;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* ================= BUTTONS ================= */
+
+.aboutButtons {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.primaryBtn,
+.secondaryBtn {
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.primaryBtn {
+
+    background: #8B5CF6;
+
+    color: white;
+
+    border: none;
+}
+
+.primaryBtn:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(139, 92, 246, .5);
+}
+
+.secondaryBtn {
+
+    background: transparent;
+
+    color: white;
+
+    border: 2px solid #8B5CF6;
+}
+
+.secondaryBtn:hover {
+
+    background: #8B5CF6;
+
+    transform: translateY(-6px);
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+
+    .aboutContent {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .aboutCards {
+
+        justify-content: center;
+    }
+
+    .aboutButtons {
+
+        justify-content: center;
+    }
+
+    .aboutText p {
+
+        max-width: 650px;
+
+        margin: 30px auto 0;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .aboutSection {
+
+        padding: 80px 7%;
+    }
+
+    .sectionTitle h2 {
+
+        font-size: 34px;
+    }
+
+    .aboutText h3 {
+
+        font-size: 28px;
+    }
+
+    .aboutText p {
+
+        font-size: 16px;
+    }
+
+    .aboutImage {
+
+        max-width: 300px;
+    }
+
+    .card {
+
+        min-width: 100%;
+    }
+
+    .aboutButtons {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .primaryBtn,
+    .secondaryBtn {
+
+        width: 220px;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .aboutSection {
+
+        padding: 70px 5%;
+    }
+
+    .sectionTitle h2 {
+
+        font-size: 30px;
+    }
+
+    .aboutText h3 {
+
+        font-size: 24px;
+    }
+
+    .aboutImage {
+
+        max-width: 260px;
+    }
+
+    .primaryBtn,
+    .secondaryBtn {
+
+        width: 100%;
+        max-width: 240px;
+    }
+}

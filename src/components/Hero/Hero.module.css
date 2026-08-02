@@ -1,0 +1,260 @@
+.heroSection {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 10% 80px;
+}
+
+.parentHeroSection {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+/* ================= LEFT ================= */
+
+.heroContent {
+    flex: 1;
+}
+
+.heroContent h2 {
+    font-size: 2.5rem;
+    color: #C4B5FD;
+    margin-bottom: 10px;
+}
+
+.heroContent h1 {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.heroContent h3 {
+    font-size: 2rem;
+    color: #8B5CF6;
+    margin-bottom: 25px;
+}
+
+.heroContent p {
+    max-width: 600px;
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    color: #94A3B8;
+}
+
+.heroContent hr {
+    margin: 35px 0;
+    border: none;
+    height: 1px;
+    background: rgba(255,255,255,.15);
+}
+
+/* ================= BUTTONS ================= */
+
+.buttonContainer {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 14px 28px;
+
+    border-radius: 35px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.primaryBtn {
+
+    background: #8B5CF6;
+    color: white;
+    border: none;
+}
+
+.primaryBtn:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(139,92,246,.4);
+}
+
+.secondaryBtn {
+
+    background: transparent;
+
+    color: white;
+
+    border: 2px solid #8B5CF6;
+}
+
+.secondaryBtn:hover {
+
+    background: #8B5CF6;
+
+    transform: translateY(-5px);
+}
+
+/* ================= SOCIAL ================= */
+
+.socialMedia {
+
+    display: flex;
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+.socialMedia a {
+
+    color: white;
+
+    font-size: 28px;
+
+    transition: .3s;
+}
+
+.socialMedia a:hover {
+
+    color: #8B5CF6;
+
+    transform: translateY(-5px);
+}
+
+/* ================= IMAGE ================= */
+
+.heroImage {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+.heroImage img {
+
+    width: 100%;
+
+    max-width: 480px;
+
+    z-index: 2;
+}
+
+.heroImage::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 360px;
+
+    height: 360px;
+
+    background: #8B5CF6;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    opacity: .55;
+
+    z-index: 1;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+    .parentHeroSection{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+        gap:60px;
+    }
+
+    .heroContent p{
+
+        margin:auto;
+    }
+
+    .buttonContainer{
+
+        justify-content:center;
+    }
+
+    .socialMedia{
+
+        justify-content:center;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:576px){
+
+    .heroSection{
+
+        padding:120px 7% 70px;
+    }
+
+    .heroContent h1{
+
+        font-size:3rem;
+    }
+
+    .heroContent h2{
+
+        font-size:2rem;
+    }
+
+    .heroContent h3{
+
+        font-size:1.5rem;
+    }
+
+    .heroContent p{
+
+        font-size:1rem;
+    }
+
+    .buttonContainer{
+
+        flex-direction:column;
+    }
+
+    .primaryBtn,
+    .secondaryBtn{
+
+        width:100%;
+    }
+
+    .heroImage img{
+
+        max-width:320px;
+    }
+}

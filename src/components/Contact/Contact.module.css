@@ -1,0 +1,183 @@
+.contactSection{
+    background:#0B1020;
+    padding:100px 10%;
+}
+
+.container{
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.sectionTitle{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.sectionTitle h4{
+    color:#8B5CF6;
+    letter-spacing:2px;
+    font-size:18px;
+}
+
+.sectionTitle h2{
+    color:white;
+    font-size:42px;
+    margin-top:10px;
+}
+
+.contactWrapper{
+    display:grid;
+    grid-template-columns:1fr 1.3fr;
+    gap:50px;
+    align-items:start;
+}
+
+.contactInfo{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.infoCard{
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    background:#131B33;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    border:1px solid #2C3A63;
+
+    transition:.3s;
+}
+
+.infoCard:hover{
+    transform:translateY(-6px);
+    border-color:#8B5CF6;
+}
+
+.icon{
+    font-size:30px;
+    color:#8B5CF6;
+}
+
+.infoCard h3{
+    color:white;
+    margin-bottom:5px;
+}
+
+.infoCard p{
+    color:#CBD5E1;
+}
+
+.contactForm{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contactForm input,
+.contactForm textarea{
+
+    background:#131B33;
+
+    border:1px solid #2C3A63;
+
+    color:white;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    outline:none;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus{
+
+    border-color:#8B5CF6;
+
+}
+
+.contactForm textarea{
+    resize:none;
+}
+
+.contactForm button{
+
+    background:#8B5CF6;
+
+    color:white;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.contactForm button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(139,92,246,.35);
+
+}
+
+@media(max-width:900px){
+
+    .contactWrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .contactSection{
+
+        padding:80px 7%;
+
+    }
+
+    .sectionTitle h2{
+
+        font-size:34px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .sectionTitle h2{
+
+        font-size:30px;
+
+    }
+
+    .contactForm input,
+    .contactForm textarea{
+
+        padding:15px;
+
+    }
+
+}
