@@ -1,3 +1,4 @@
+
 import styles from "./Hero.module.css";
 
 import {
@@ -15,10 +16,8 @@ const Hero = () => {
   return (
     <section id="home" className={styles.heroSection}>
       <div className={styles.parentHeroSection}>
-
         {/* Left Side */}
         <div className={styles.heroContent}>
-
           <h2>Hi, I'm</h2>
 
           <h1>Ajeet Kumar</h1>
@@ -33,25 +32,30 @@ const Hero = () => {
           </p>
 
           <div className={styles.buttonContainer}>
-
-            <button className={styles.primaryBtn}>
+            <a
+              className={styles.primaryBtn}
+              href="/Ajeet-Kumar-CV.pdf"
+              download="Ajeet-Kumar-CV.pdf"
+            >
               <FaCircleDown />
               <span>Download CV</span>
-            </button>
+            </a>
 
-            <button className={styles.secondaryBtn}>
+            <a
+              className={styles.secondaryBtn}
+              href="#contact"
+            >
               <FaAddressCard />
               <span>Contact Me</span>
-            </button>
-
+            </a>
           </div>
 
           <div className={styles.socialMedia}>
-
             <a
               href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram"
             >
               <FaInstagram />
             </a>
@@ -60,6 +64,7 @@ const Hero = () => {
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
             >
               <FaLinkedin />
             </a>
@@ -68,23 +73,17 @@ const Hero = () => {
               href="https://github.com/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
             >
               <FaGithub />
             </a>
-
           </div>
-
         </div>
 
         {/* Right Side */}
-
         <div className={styles.heroImage}>
-          <img
-            src={PhotoAjeet2}
-            alt="Ajeet Kumar"
-          />
+          <img src={PhotoAjeet2} alt="Ajeet Kumar" />
         </div>
-
       </div>
     </section>
   );
